@@ -1,0 +1,72 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+
+html{
+    background-color: black;
+}
+
+.linkedin{
+    width: 30px;
+    height: 30px;
+}
+
+.github{
+    width: 35px;
+    height: 35px;
+}
+
+nav{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 20px;
+}
+
+
+h2{
+    color: red;
+    font-size: 50px;
+}
+
+.cursos{
+    color: white;
+    font-size: 18px;
+}
+
+.projetos{
+    color: white;
+    font-size: 18px;
+}
+
+h1{
+    color: white;
+    width: 100%;
+}
+
+p{
+    color: white;
+}
+
+.oi{color: red;}
+
+span{
+    color: white;
+}
+
+.eu{
+    width: 250px;
+    height: 280px;
+}
+
+.decoracao_projetos{
+    max-width:100%;
+    width: 100%;
+    height: auto;
+    position: relative; /* define a posição como relativa para poder movê-la */
+    left: 650px; /* move a imagem 50 pixels para a direita */
+    margin-top: -45%;
+}
