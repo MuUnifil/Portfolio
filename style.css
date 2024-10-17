@@ -1,0 +1,139 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+
+html{
+    background-color: black;
+    width: 200vh;
+    height: auto;
+}
+
+.linkedin{
+    width: 30px;
+    height: 30px;
+}
+
+.github{
+    width: 35px;
+    height: 35px;
+}
+
+nav{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 20px;
+    position: relative;
+    z-index:1;
+    align-items: center;
+}
+
+.linha_check{
+    align-items: center;
+}
+
+#imagens_nav{
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+}
+
+h2{
+    color: red;
+    font-size: 50px; 
+}
+
+.cursos{
+    color: white;
+    font-size: 18px;
+}
+
+.projetos{
+    color: white;
+    font-size: 18px;
+}
+
+h1{
+    color: white;
+    width: 100%;
+}
+
+p{
+    color: white;
+}
+
+.oi{color: red;}
+
+span{
+    color: white;
+}
+
+.container-sobre {
+    display: flex;
+    align-items: center; /* Itens ao topo */
+    gap:10px;
+}
+
+#imagem_eu{
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+
+.sobre_mim{
+    text-align: left ;
+    width: 100%;
+}
+
+.eu{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+.imagens_skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.imagens_skills img{
+    width: 60px;
+    height: auto ;
+    margin-bottom: 2em; /* espacamento entre as imagens sessao*/
+}
+
+#git_skills{
+    width: 85px;
+    height: auto;
+}
+
+.imagens_cursos {
+    position:relative;
+    /* Outras propriedades de estilo */
+}
+
+
+
+.background_projects{
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-image: url('imagens/Group\ 47.png');
+    background-position: 900px -100px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.titulo_skills_completo{
+    line-height: 10px;
+    padding-left: 135px;
+    padding-top: 10px;
+    padding-bottom: 80px;
+}
