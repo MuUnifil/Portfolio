@@ -141,7 +141,7 @@ span{
     background-position: 900px -100px;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow-x:hidden;
 }
 
 .titulo_skills_completo{
