@@ -1,6 +1,8 @@
 a{
     text-decoration: none;
     color: white;
+    font-size: 16px;
+
 }
 
 html{
@@ -31,8 +33,16 @@ nav{
     align-items: center;
 }
 
+
+nav a:hover{
+    font-size: 19px;
+    transition: 0.3s;
+}
+
 .linha_check{
+    display: flex;
     align-items: center;
+    
 }
 
 #imagens_nav{
@@ -72,6 +82,8 @@ span{
 }
 
 .container-sobre {
+    padding-left: 5%;
+    padding-top: 5%;
     display: flex;
     align-items: center; /* Itens ao topo */
     gap:10px;
@@ -94,6 +106,7 @@ span{
     width: 100%;
     height: 100%;
     border-radius: 10%;
+    border: 4px solid white;  /* border-width: 2px;     border-style: solid;    border-color: white;*/
 }
 
 .imagens_skills{
