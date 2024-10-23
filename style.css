@@ -1,4 +1,4 @@
-a{
+nav a{
     text-decoration: none;
     color: white;
     font-size: 16px;
@@ -7,8 +7,9 @@ a{
 
 html{
     background-color: black;
-    width: 200vh;
+    width: 100vw;
     height: auto;
+    overflow-x:hidden;
 }
 
 .linkedin{
@@ -21,22 +22,27 @@ html{
     height: 35px;
 }
 
-nav{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    display: grid;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    margin: 20px;
-    position: relative;
-    z-index:1;
+div nav{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 
+nav {
+    display: flex;
+    justify-content: space-evenly;/* Espaçamento igual*/
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    z-index: 1;
+}
+
 nav a:hover{
     font-size: 19px;
     transition: 0.3s;
+    color: red;
 }
 
 .linha_check{
@@ -48,22 +54,20 @@ nav a:hover{
 #imagens_nav{
     display: flex;
     align-items: center;
-    padding-left: 150px;
+
 }
 
 h2{
     color: red;
     font-size: 50px; 
+    text-align: left;
+    margin-bottom: 10px;
 }
 
-.cursos{
-    color: white;
+.projetos, .cursos {
     font-size: 18px;
-}
-
-.projetos{
     color: white;
-    font-size: 18px;
+    margin: 20px 0;
 }
 
 h1{
@@ -83,44 +87,59 @@ span{
 
 .container-sobre {
     padding-left: 5%;
-    padding-top: 5%;
     display: flex;
     align-items: center; /* Itens ao topo */
+    justify-content: center;
     gap:10px;
 }
 
-#imagem_eu{
+#imagem_eu {
     width: 20%;
-    height: auto;
-    object-fit: cover;
-    margin-right: 20px;
+    margin-right: 40px;
 }
-
 
 .sobre_mim{
     text-align: left ;
-    width: 100%;
+    width: 70%;
 }
 
-.eu{
+.sobre_mim h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.sobre_mim p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.sobre_mim span {
+    color: #aaa;
+    font-style: italic;
+}
+
+.eu {
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 10%;
-    border: 4px solid white;  /* border-width: 2px;     border-style: solid;    border-color: white;*/
+    border: 4px solid white;
+    object-fit: cover;
 }
 
 .imagens_skills{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     justify-items: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .imagens_skills img{
     width: 60px;
     height: auto ;
-    margin-bottom: 2em; /* espacamento entre as imagens sessao*/
 }
+
 
 #git_skills{
     width: 85px;
@@ -132,7 +151,12 @@ span{
     /* Outras propriedades de estilo */
 }
 
-
+#saudacao{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight:bold;
+}
 
 .background_projects{
     background-size: cover ;
@@ -144,9 +168,9 @@ span{
     overflow-x:hidden;
 }
 
-.titulo_skills_completo{
-    line-height: 10px;
-    padding-left: 135px;
+.titulo_skills_completo {
+    text-align: left;
+    padding-left: 130px;
     padding-top: 10px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
