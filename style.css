@@ -39,6 +39,8 @@ nav {
     z-index: 1;
 }
 
+
+
 nav a:hover{
     font-size: 20px;
     transition: 0.3s;
@@ -96,6 +98,9 @@ span{
 #imagem_eu {
     width: 20%;
     margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sobre_mim{
@@ -125,6 +130,32 @@ span{
     border: 4px solid white;
     object-fit: cover;
 }
+
+.eu_contato{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    color: black;
+    border-radius: 50px;
+    background-color: white;
+    margin-top: 10px;
+    padding: 5px 0;
+    font-size:16px;  
+
+}
+
+.eu_contato:hover{
+    color: red;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#botao_contact{
+    width: 50%;
+    height: auto;
+    text-decoration: none;
+}
+
 
 .imagens_skills{
     display: grid;
