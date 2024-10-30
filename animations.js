@@ -14,7 +14,12 @@ function criarRastro(event) {
     setTimeout(() => {
         rastro.remove();
     }, 300); //tempo em ms para o rastro
-}        //mudar para deixar o efeito pixelado
+
+    /*  rastro.addEventListener('animationend', () => {
+        rastro.remove();
+    });*/
+    
+}       
 
 
 //Tema Claro/Escuro(tentar)
