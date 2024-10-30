@@ -206,3 +206,12 @@ span{
     flex-direction: column;
     align-items: center;
 }
+
+.trail {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 3px;
+            background-color: rgba(175, 170, 170, 0.8);
+            pointer-events: none;
+        }
