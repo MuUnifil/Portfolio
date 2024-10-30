@@ -1,11 +1,22 @@
 //MUDAR BACKGROUND QUANDO PASSAR O MOUSE(opacidade)
+document.addEventListener('mousemove', criarRastro);
 
-//Tema Claro/Escuro
+function criarRastro(event) {
+    const rastro = document.createElement('div'); //cria uma div
+    rastro.classList.add('trail');  //adiciona a classe trail a div criada
+    
+    rastro.style.left = `${event.pageX}px`;
+    rastro.style.top = `${event.pageY}px`;
+    
+    document.body.appendChild(rastro);  
+
+  
+    setTimeout(() => {
+        rastro.remove();
+    }, 300); //tempo em ms para o rastro
+}
+
+//Tema Claro/Escuro(tentar)
 
 /*TER UMA SEÇÃO PARA CERTIFICADOS ANIMADA
 Exibição de Certificados: Um carrossel ou galeria interativa que exibe certificações (com links para as versões originais).*/
-
-/*Formulário de Contato
-Formulário com Validação em Tempo Real: Um formulário de contato onde as validações acontecem enquanto o usuário preenche (como avisos se o e-mail está no formato correto).
-
-Envio de Mensagem via API: Integrar com um serviço de envio de e-mails usando, por exemplo, EmailJS, para que as mensagens possam ser enviadas diretamente do site sem recarregar a página.*/
