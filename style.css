@@ -216,4 +216,16 @@ span{
             background-color: rgba(175, 170, 170, 0.8);
             pointer-events: none;
             z-index: -1;
+    /* animation: pixelFadeOut 0.8s steps(2, end) forwards; (Animação em passos para efeito de sumiço) */
         }
+/* Animação para o efeito de desaparecimento pixelado 
+    @keyframes pixelFadeOut {
+        0% {
+            opacity: 1;
+            transform: scale(1);  (Tamanho inicial(
+        }
+        100% {
+            opacity: 0;
+            transform: scale(1.5); (Expande um pouco)
+        }
+    }*/
