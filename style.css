@@ -10,6 +10,7 @@ html{
     width: 100vw;
     height: auto;
     overflow-x:hidden;
+    z-index: 0;
 }
 
 .linkedin{
@@ -214,4 +215,5 @@ span{
             border-radius: 3px;
             background-color: rgba(175, 170, 170, 0.8);
             pointer-events: none;
+            z-index: -1;
         }
