@@ -1,29 +1,31 @@
-nav a{
+nav a {
     text-decoration: none;
     color: white;
     font-size: 16px;
 
 }
 
-html{
+html {
     background-color: black;
     width: 100vw;
     height: auto;
-    overflow-x:hidden;
+    overflow-x: hidden;
     z-index: 0;
+    padding: 0;
+    margin: 0;
 }
 
-.linkedin{
+.linkedin {
     width: 30px;
     height: 30px;
 }
 
-.github{
+.github {
     width: 35px;
     height: 35px;
 }
 
-div nav{
+div nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +34,8 @@ div nav{
 
 nav {
     display: flex;
-    justify-content: space-evenly;/* Espaçamento igual*/
+    justify-content: space-evenly;
+    /* Espaçamento igual*/
     align-items: center;
     width: 100%;
     height: 100%;
@@ -42,64 +45,68 @@ nav {
 
 
 
-nav a:hover{
-    transform:scale(1.2);
+nav a:hover {
+    transform: scale(1.2);
     transition: 0.3s;
     color: red;
 }
 
-.linha_check{
-    display: flex;
-    align-items: center;
-    
-}
-
-#imagens_nav{
+.linha_check {
     display: flex;
     align-items: center;
 
 }
 
-h2{
+#imagens_nav {
+    display: flex;
+    align-items: center;
+
+}
+
+h2 {
     color: red;
-    font-size: 50px; 
+    font-size: 50px;
     text-align: left;
     margin-bottom: 10px;
 }
 
-.projetos, .cursos {
+.projetos,
+.cursos {
     font-size: 18px;
     color: white;
     margin: 20px 0;
 }
 
-h1{
+h1 {
     color: red;
     width: 100%;
 }
 
-p{
+p {
     color: white;
 }
 
-.oi{color: red;}
+.oi {
+    color: red;
+}
 
-span{
+span {
     color: white;
 }
 
 .container-sobre {
     padding-left: 5%;
     display: flex;
-    align-items: center; /* Itens ao topo */
+    align-items: center;
+    /* Itens ao topo */
     justify-content: center;
-    gap:10px;
+    gap: 10px;
 }
 
 
 
-.sobre_mim{
-    text-align: left ;
+.sobre_mim {
+    text-align: left;
     width: 70%;
 }
 
@@ -126,40 +133,41 @@ span{
     align-items: center;
 }
 
-.eu { width: 280px; 
-    height: 280px; 
-    border-radius: 10%; 
-    border: 4px solid white; 
-    object-fit: cover; 
+.eu {
+    width: 280px;
+    height: 280px;
+    border-radius: 10%;
+    border: 4px solid white;
+    object-fit: cover;
 }
 
-.eu_contato{
+.eu_contato {
     display: flex;
-    align-items: center ;
+    align-items: center;
     justify-content: center;
     color: black;
     border-radius: 50px;
     background-color: white;
     margin-top: 1em;
     padding: 0.3em;
-    font-size:1rem;  
+    font-size: 1rem;
 
 }
 
-.eu_contato:hover{
+.eu_contato:hover {
     color: red;
     transform: scale(1.2);
     transition: 0.3s;
 }
 
-#botao_contact{
+#botao_contact {
     width: 80%;
     height: auto;
     text-decoration: none;
 }
 
 
-.imagens_skills{
+.imagens_skills {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -168,76 +176,79 @@ span{
     margin-top: 20px;
 }
 
-.imagens_skills i:hover{
+.imagens_skills i:hover {
     transform: scale(1.2);
     transition: 0.3s;
 }
 
-#css{
+#css {
     color: white;
     font-size: 70px;
 }
 
-#html{
+#html {
     color: white;
     font-size: 70px;
 }
 
-#js{
-    color: white;
-    font-size: 70px;
-}
-#py{
-    color: white;
-    font-size: 70px;
-}
-#figma{
-    color: white;
-    font-size: 70px;
-}
-#java{
-    color: white;   
-    font-size: 70px;
-}
-
-#jira{
+#js {
     color: white;
     font-size: 70px;
 }
 
-#git_skills{
+#py {
+    color: white;
+    font-size: 70px;
+}
+
+#figma {
+    color: white;
+    font-size: 70px;
+}
+
+#java {
+    color: white;
+    font-size: 70px;
+}
+
+#jira {
+    color: white;
+    font-size: 70px;
+}
+
+#git_skills {
     font-size: 70px;
     color: white;
 }
 
-.imagens_skills img{
+.imagens_skills img {
     width: 60px;
-    height: auto ;
+    height: auto;
 }
 
 
 
 
 .imagens_cursos {
-    position:relative;
+    position: relative;
     /* Outras propriedades de estilo */
 }
 
-#saudacao{
+#saudacao {
     text-align: center;
     margin-top: 40px;
     font-size: 30px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
-.background_projects{
-    background-size: cover ;
+.background_projects {
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url('imagens/Group\ 47.png');
     background-position: 900px -100px;
     width: 100vw;
     height: 100vh;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 .titulo_skills_completo {
@@ -249,11 +260,28 @@ span{
 }
 
 .trail {
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            border-radius: 3px;
-            background-color: rgba(20, 20, 20, 0.8);
-            pointer-events: none;
-            z-index: -1;
-        }
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: rgba(20, 20, 20, 0.8);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.end {
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 1px 15%;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.last-text p {
+    color: white;
+    font-size: 1.2rem;
+}
