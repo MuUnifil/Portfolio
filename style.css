@@ -73,7 +73,12 @@ h2 {
 .cursos {
     font-size: 18px;
     color: white;
-    margin: 20px 0;
+    margin-left:2rem;
+}
+
+.titulo_projetos{
+    margin-top: 8rem;
+    margin-left: 1rem;
 }
 
 h1 {
@@ -165,7 +170,7 @@ span {
 .imagens_skills {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 5rem;
     justify-items: center;
     align-items: center;
     margin-top: 20px;
@@ -216,37 +221,17 @@ span {
     color: white;
 }
 
-.imagens_skills img {
-    width: 60px;
-    height: auto;
-}
-
-.imagens_cursos {
-    position: relative;
-    /* Outras propriedades de estilo */
-}
-
 #saudacao {
     text-align: center;
-    margin-top: 40px;
+    margin-bottom: 1rem;
     font-size: 30px;
     font-weight: bold;
 }
 
-.background_projects {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('imagens/Group\ 47.png');
-    background-position: 900px -100px;
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-}
-
 .titulo_skills_completo {
     display: flex;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     flex-direction: column;
     align-items: center;
 }
@@ -265,7 +250,7 @@ span {
     letter-spacing: 1px;
     text-align: center;
     padding: 1px 15%;
-    margin-top: 1em;
+    margin-top: 5em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -276,4 +261,25 @@ span {
 .last-text p {
     color: white;
     font-size: 1.2rem;
+}
+
+.pagina_inicial{
+    margin-top: 8rem;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
 }
