@@ -223,7 +223,7 @@ span {
 
 #saudacao {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     font-size: 30px;
     font-weight: bold;
 }
@@ -266,7 +266,7 @@ span {
 }
 
 .pagina_inicial{
-    margin-top: 8rem;
+    margin-top: 6rem;
 }
 
 canvas {
@@ -287,4 +287,13 @@ canvas {
     background-size: cover;
     background-position: 50% 50%;
     z-index: -1;
+}
+
+.texto-animado {
+    display: inline-block;
+    color: white;
+    font-size: 1em;
+    height: 1em;
+    overflow: hidden; /* Evita que o espaço seja maior do que o necessário */
+    white-space: nowrap; /* Evita quebra de linha */
 }
