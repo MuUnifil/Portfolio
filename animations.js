@@ -13,12 +13,10 @@ function criarRastro(event) {
   
     setTimeout(() => {
         rastro.remove();
-    }, 300); //tempo em ms para o rastro
+    }, 180); //tempo em ms para o rastro
     
 }       
     
-
-//Tema Claro/Escuro(tentar)
 
 /*TER UMA SEÇÃO PARA CERTIFICADOS ANIMADA
 Exibição de Certificados: Um carrossel ou galeria interativa que exibe certificações (com links para as versões originais).*/
