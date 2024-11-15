@@ -22,5 +22,3 @@ function criarRastro(event) {
 Exibição de Certificados: Um carrossel ou galeria interativa que exibe certificações (com links para as versões originais).*/
 
 //Menu Lateral ou Navbar Animada
-
-// Animação de Typing (Efeito de Digitação) (No HELLO)
