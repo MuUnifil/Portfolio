@@ -20,13 +20,13 @@ html {
 }
 
 .linkedin {
-    width: 30px;
-    height: 30px;
+    width: 1.87rem;
+    height: 1.87rem;
 }
 
 .github {
-    width: 35px;
-    height: 35px;
+    width: 2.18rem;
+    height: 2.18rem;
 }
 
 div nav {
@@ -42,7 +42,7 @@ nav {
     align-items: center;
     width: 100%;
     height: 100%;
-    margin: 20px;
+    margin: 1.25rem;
     z-index: 1;
 }
 
@@ -64,14 +64,14 @@ nav a:hover {
 
 h2 {
     color: red;
-    font-size: 50px;
+    font-size: 3.12rem;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 0.62rem;
 }
 
 .projetos,
 .cursos {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: white;
     margin-left:2rem;
 }
@@ -113,13 +113,13 @@ span {
 }
 
 .sobre_mim h1 {
-    font-size: 24px;
-    margin-bottom: 12px;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .sobre_mim p {
-    font-size: 18px;
-    margin-bottom: 25px;
+    font-size: 1.125rem;
+    margin-bottom: 1.56rem;
 }
 
 .sobre_mim span {
@@ -129,7 +129,7 @@ span {
 
 #imagem_eu {
     width: 20%;
-    margin-right: 40px;
+    margin-right: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,7 +148,7 @@ span {
     align-items: center;
     justify-content: center;
     color: black;
-    border-radius: 50px;
+    border-radius: 3.12rem;
     background-color: white;
     margin-top: 1em;
     padding: 0.3em;
@@ -173,7 +173,7 @@ span {
     gap: 5rem;
     justify-items: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .imagens_skills i:hover {
@@ -183,48 +183,48 @@ span {
 
 #css {
     color: white;
-    font-size: 70px;
+    font-size: 4.37rem;
 }
 
 #html {
     color: white;
-    font-size: 70px;
+    font-size: 4.37rem;
 }
 
 #js {
     color: white;
-    font-size: 70px;
+    font-size: 4.37rem;
 }
 
 #py {
     color: white;
-    font-size: 70px;
+    font-size: 4.37rem;
 }
 
 #figma {
     color: white;
-    font-size: 70px;
+    font-size: 4.37rem;
 }
 
 #java {
     color: white;
-    font-size: 70px;
+    font-size: 4.37rem;
 }
 
 #jira {
     color: white;
-    font-size: 70px;
+    font-size: 4.37rem;
 }
 
 #git_skills {
-    font-size: 70px;
+    font-size: 4.37rem;
     color: white;
 }
 
 #saudacao {
     text-align: center;
     margin-bottom: 2.5rem;
-    font-size: 30px;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -238,9 +238,9 @@ span {
 
 .trail {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    border-radius: 3px;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 0.18rem;
     background-color: rgba(20, 20, 20, 0.8);
     pointer-events: none;
     z-index: -1;
@@ -308,7 +308,7 @@ span {
 
 .fade-in {
     opacity: 0;
-    transform: translateY(30px); /* Move os elementos para baixo inicialmente */
+    transform: translateY(1.8rem); /* Move os elementos para baixo inicialmente */
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
