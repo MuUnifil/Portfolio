@@ -13,12 +13,17 @@ function criarRastro(event) {
   
     setTimeout(() => {
         rastro.remove();
-    }, 180); //tempo em ms para o rastro
+    }, 100); //tempo em ms para o rastro
     
 }       
-    
+
+
+function clickMenu() {
+    var navbar = document.getElementById("navbar");
+    navbar.classList.toggle("active"); // Alterna a classe 'active' para abrir/fechar o menu
+}
 
 /*TER UMA SEÇÃO PARA CERTIFICADOS ANIMADA
 Exibição de Certificados: Um carrossel ou galeria interativa que exibe certificações (com links para as versões originais).*/
 
-//Menu Lateral ou Navbar Animada
+//Menu Lateral ou Navbar Animada(responsividade)
