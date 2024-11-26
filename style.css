@@ -1,16 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
     background-color: black;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     overflow-x: hidden;
     z-index: 0;
-    padding: 0;
-    margin: 0;
 }
 
 .linkedin {
@@ -28,14 +27,10 @@ html {
     align-items: center;
     justify-content: space-evenly;
     position: static;
-    transform: none;
     width: auto;
     height: auto;
     background-color: transparent;
-}
-
-.navbar.active {
-    transform: translateX(0); /* Traz o menu para a tela */
+    transform: translateX(0);
 }
 
 /* Links no menu */
@@ -335,34 +330,41 @@ i#burger:hover{
 }
 
 @media (max-width: 768px) {
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: black;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        transform: translateX(-100%); /* Inicialmente escondido */
-        transition: transform 0.3s ease-in-out;
-        z-index: 1000;
-    }
-
-    .navbar.active {
-        transform: translateX(0); /* Menu visível */
-    }
-
     #burger {
-        display: block;
+        display: block; /* Torna visível em telas menores */
         position: fixed;
         top: 1rem;
         right: 1rem;
-        z-index: 1100;
+        z-index: 1100; /* Acima do menu */
         color: white;
         font-size: 2rem;
         cursor: pointer;
+    }
+
+    #burger:hover {
+        transform: scale(1.2);
+        color: red;
+        transition: 0.3s;
+    }
+
+    .navbar.active {
+        transform: translateX(0); /* Mostra o menu */
+        display: flex; /* Garante que os links aparecem corretamente */
+        flex-direction: column;
+    }
+
+    .navbar {
+        transform: translateX(-100%); /* Esconde fora da tela */
+    }
+
+    .navbar{
+        display: none;
+    }
+    /* Garante que os itens do menu aparecem corretamente */
+    .navbar a {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
     }
 }
