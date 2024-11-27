@@ -38,6 +38,7 @@ html {
     text-decoration: none;
     color: white;
     font-size: 1.2em;
+    margin: 1rem;
 }
 
 .navbar a:hover {
@@ -331,11 +332,11 @@ i#burger:hover{
 
 @media (max-width: 768px) {
     #burger {
-        display: block; /* Torna visível em telas menores */
+        display: block; /* Mostra o botão burger */
         position: fixed;
         top: 1rem;
         right: 1rem;
-        z-index: 1100; /* Acima do menu */
+        z-index: 1100;
         color: white;
         font-size: 2rem;
         cursor: pointer;
@@ -347,24 +348,42 @@ i#burger:hover{
         transition: 0.3s;
     }
 
-    .navbar.active {
-        transform: translateX(0); /* Mostra o menu */
-        display: flex; /* Garante que os links aparecem corretamente */
-        flex-direction: column;
-    }
-
     .navbar {
-        transform: translateX(-100%); /* Esconde fora da tela */
+        position: fixed; /* Fixar no viewport */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; /* Ocupa a tela toda ao abrir */
+        background-color: black;
+        display: none; /* Esconde o menu inicialmente */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-100%); /* Escondido fora da tela */
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000; /* Mantém acima de outros elementos */
     }
 
-    .navbar{
-        display: none;
+    .navbar.active {
+        display: flex; /* Mostra o menu */
+        transform: translateX(0); /* Desliza para dentro da tela */
     }
-    /* Garante que os itens do menu aparecem corretamente */
+
     .navbar a {
         padding: 10px 0;
         width: 100%;
         text-align: center;
         text-decoration: none;
+        font-size: 1.5em;
+    }
+
+    .linkedin {
+        width: 2.37rem;
+        height: 2.37rem;
+    }
+    
+    .github {
+        width: 2.68rem;
+        height: 2.68rem;
     }
 }
