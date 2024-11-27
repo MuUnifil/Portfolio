@@ -17,31 +17,32 @@ function criarRastro(event) {
     
 }       
 
-
+//Menu Lateral ou Navbar Animada(responsividade)
 document.addEventListener('DOMContentLoaded', () => {
     const burger = document.getElementById('burger');
     const navbar = document.getElementById('navbar');
     const navLinks = document.querySelectorAll('.navbar a');
 
-    // Alternar visibilidade do menu
+    // Alternar visibilidade do menu ao clicar no burger
     burger.addEventListener('click', () => {
         navbar.classList.toggle('active'); // Abre/fecha o menu
     });
 
-    // Fechar o menu ao clicar em um link
+    // Fechar o menu ao clicar em qualquer link dentro dele
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             navbar.classList.remove('active'); // Fecha o menu
         });
     });
 
-    // Garantir que o menu feche na troca de página
-    if (navbar.classList.contains('active')) {
-        navbar.classList.remove('active');
-    }
+    // Fechar o menu ao rolar a página
+    window.addEventListener('scroll', () => {
+        if (navbar.classList.contains('active')) {
+            navbar.classList.remove('active'); // Fecha o menu
+        }
+    });
 });
 
 /*TER UMA SEÇÃO PARA CERTIFICADOS ANIMADA
 Exibição de Certificados: Um carrossel ou galeria interativa que exibe certificações (com links para as versões originais).*/
 
-//Menu Lateral ou Navbar Animada(responsividade)
