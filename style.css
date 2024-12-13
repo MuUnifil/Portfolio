@@ -130,8 +130,8 @@ span {
 }
 
 .eu {
-    width: 17.5em;
-    height: 17.5em;
+    width: 16em;
+    height: 16em;
     border-radius: 10%;
     border: 4px solid white;
     object-fit: cover;
@@ -153,6 +153,11 @@ span {
     color: red;
     transform: scale(1.2);
     transition: 0.3s;
+}
+
+.contact_nav{
+    display: none;
+    color: white;
 }
 
 #botao_contact {
@@ -330,6 +335,28 @@ i#burger:hover{
     transform: translateY(0); /* Retorna à posição original */
 }
 
+
+@media(max-width: 950px){
+    .sobre_mim h1 {
+        font-size: 1.38rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .sobre_mim p {
+        font-size: 1rem;
+        margin-bottom: 1.56rem;
+    }
+
+    .eu {
+        width: 14em;
+        height: 14em;
+        border-radius: 10%;
+        border: 4px solid white;
+        object-fit: cover;
+    }
+
+}
+
 @media (max-width: 768px) {
     #burger {
         display: block; /* Mostra o botão burger */
@@ -364,6 +391,13 @@ i#burger:hover{
         z-index: 1000; /* Mantém acima de outros elementos */
     }
 
+    .contact_nav{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .navbar.active {
         display: flex; /* Mostra o menu */
         transform: translateX(0); /* Desliza para dentro da tela */
@@ -386,4 +420,16 @@ i#burger:hover{
         width: 2.68rem;
         height: 2.68rem;
     }
-}
+
+    .eu {
+        display: none;
+    }
+
+    #botao_contact{
+        display: none;
+    }
+
+    #imagem_eu{
+        display: none;
+    }
+}   
