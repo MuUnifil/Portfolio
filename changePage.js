@@ -35,12 +35,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 500);
     }
 
-    // Fecha o menu e realiza a transição na troca de página
+    // Gerencia cliques nos links de navegação
     navLinks.forEach(link => {
         link.addEventListener('click', function (e) {
-            e.preventDefault();
             const url = this.href;
 
+            // Verifica se o link é externo (não pertence ao mesmo domínio)
+            if (this.target === '_blank' || url.startsWith('http') && !url.includes(window.location.hostname)) {
+                // Permite o comportamento padrão para links externos
+                return;
+            }
+
+            e.preventDefault(); // Previne o comportamento padrão
             navbar.classList.remove('active'); // Fecha o menu
             fadeOut(url); // Faz a transição
         });
