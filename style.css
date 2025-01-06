@@ -166,6 +166,7 @@ span {
     text-decoration: none;
 }
 
+
 .imagens_skills {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -432,4 +433,20 @@ i#burger:hover{
     #imagem_eu{
         display: none;
     }
+
+
 }   
+
+@media (max-width: 520px) {
+
+    .imagens_skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+        justify-items: center;
+        align-items: center;
+        margin-top: 1.25rem;
+    }
+
+
+}
